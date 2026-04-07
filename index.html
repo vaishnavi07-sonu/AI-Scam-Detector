@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Scam Detector</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<h1>Code Arena Scam Detector</h1>
+<textarea id="text" placeholder="Paste message here..."></textarea>
+<button onclick="check()">Check</button>
+
+<div id="loading">Analyzing...</div>
+
+<div id="popup">
+  <div id="popupText"></div>
+  <div id="scoreText"></div>
+  <div id="progress-container"><div id="progress-bar"></div></div>
+  <div id="reasonText"></div>
+  <button onclick="closePopup()">Close</button>
+</div>
+
+<a href="dashboard.html" style="color:#6b5b95; margin-top:20px; display:block;">Go to Dashboard</a>
+</body>
+</html>

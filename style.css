@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fdf6f0; /* soft cream */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 { color: #6b5b95; margin-bottom: 20px; }
+
+textarea { width: 80%; height: 120px; padding: 10px; border-radius: 10px; border: 2px solid #ccc; font-size: 16px; margin-bottom:10px; }
+button { padding: 10px 20px; border-radius: 10px; border: none; background: #ffb6b9; color: #fff; font-weight: bold; cursor: pointer; }
+button:hover { background: #fa7f72; }
+
+#loading { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(255,255,255,0.8); justify-content:center; align-items:center; font-size:24px; color: #6b5b95; z-index:1000; }
+
+#popup { display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#e0f7da; padding:20px; border-radius:15px; width:80%; max-width:500px; text-align:center; z-index:1001; }
+
+#progress-container { width:100%; background:#ddd; border-radius:10px; margin:15px 0; height:20px; }
+#progress-bar { width:0%; height:100%; background:#ffd97d; border-radius:10px; transition:width 0.5s; }
+
+#reasonText { margin-top:10px; font-size:14px; text-align:left; max-height:150px; overflow-y:auto; }
+mark.scam { background-color:#ffadad; font-weight:bold; color:#800000; }
+mark.safe { background-color:#caffbf; font-weight:bold; color:#006400; }
